@@ -1,14 +1,14 @@
 4300
 89C:\Users\Avinash\OneDrive\Desktop\namsate-react\node_modules\@parcel\logger\src\Logger.js133790082505761223 0
 92C:\Users\Avinash\OneDrive\Desktop\namsate-react\node_modules\caniuse-lite\data\regions\BI.js133790082552168222 0
-60C:\Users\Avinash\OneDrive\Desktop\namsate-react\package.json133790085010653453 0
+60C:\Users\Avinash\OneDrive\Desktop\namsate-react\package.json133790704305996104 0
 92C:\Users\Avinash\OneDrive\Desktop\namsate-react\node_modules\caniuse-lite\data\regions\BA.js133790082549059628 0
 136C:\Users\Avinash\OneDrive\Desktop\namsate-react\node_modules\node-gyp-build-optional-packages\node_modules\detect-libc\lib\filesystem.js133790082505821677 0
 76C:\Users\Avinash\OneDrive\Desktop\namsate-react\node_modules\.bin\parcel.cmd133790082628919882 0
 92C:\Users\Avinash\OneDrive\Desktop\namsate-react\node_modules\caniuse-lite\data\regions\KZ.js133790082590848482 0
 102C:\Users\Avinash\OneDrive\Desktop\namsate-react\node_modules\electron-to-chromium\chromium-versions.js133790082500678975 0
 126C:\Users\Avinash\OneDrive\Desktop\namsate-react\node_modules\posthtml\node_modules\entities\lib\generated\decode-data-xml.d.ts133790082536108376 0
-52C:\Users\Avinash\OneDrive\Desktop\namsate-react\dist133790085634760926 1
+52C:\Users\Avinash\OneDrive\Desktop\namsate-react\dist133790704543644928 1
 93C:\Users\Avinash\OneDrive\Desktop\namsate-react\node_modules\@parcel\transformer-posthtml\src133790082513798376 1
 87C:\Users\Avinash\OneDrive\Desktop\namsate-react\node_modules\entities\lib\esm\encode.js133790082529115217 0
 96C:\Users\Avinash\OneDrive\Desktop\namsate-react\node_modules\update-browserslist-db\package.json133790082515438220 0
@@ -54,7 +54,7 @@
 66C:\Users\Avinash\OneDrive\Desktop\namsate-react\node_modules\json5133790082527282582 1
 91C:\Users\Avinash\OneDrive\Desktop\namsate-react\node_modules\@swc\helpers\cjs\_defaults.cjs133790082546300830 0
 137C:\Users\Avinash\OneDrive\Desktop\namsate-react\node_modules\msgpackr-extract\node_modules\.bin\node-gyp-build-optional-packages-test.cmd133790082628980108 0
-57C:\Users\Avinash\OneDrive\Desktop\namsate-react\README.md133790073007297178 0
+57C:\Users\Avinash\OneDrive\Desktop\namsate-react\README.md133790085683779352 0
 113C:\Users\Avinash\OneDrive\Desktop\namsate-react\node_modules\msgpackr-extract\node_modules\detect-libc\index.d.ts133790082518577301 0
 86C:\Users\Avinash\OneDrive\Desktop\namsate-react\node_modules\semver\functions\minor.js133790082540323013 0
 105C:\Users\Avinash\OneDrive\Desktop\namsate-react\node_modules\posthtml\node_modules\domhandler\lib\node.js133790082506019838 0
@@ -1387,7 +1387,7 @@
 102C:\Users\Avinash\OneDrive\Desktop\namsate-react\node_modules\@swc\helpers\src\_object_spread_props.mjs133790082582480346 0
 112C:\Users\Avinash\OneDrive\Desktop\namsate-react\node_modules\@swc\helpers\src\_class_private_field_loose_key.mjs133790082579751859 0
 108C:\Users\Avinash\OneDrive\Desktop\namsate-react\node_modules\posthtml\node_modules\domutils\lib\stringify.js133790082520928301 0
-63C:\Users\Avinash\OneDrive\Desktop\namsate-react\dist\index.html133790085634591028 0
+63C:\Users\Avinash\OneDrive\Desktop\namsate-react\dist\index.html133790704543422618 0
 97C:\Users\Avinash\OneDrive\Desktop\namsate-react\node_modules\cosmiconfig\dist\getDirectory.js.map133790082539636972 0
 113C:\Users\Avinash\OneDrive\Desktop\namsate-react\node_modules\caniuse-lite\data\features\css-background-offsets.js133790082562198588 0
 110C:\Users\Avinash\OneDrive\Desktop\namsate-react\node_modules\posthtml\node_modules\domutils\lib\traversal.d.ts133790082537975045 0
@@ -3134,7 +3134,7 @@
 88C:\Users\Avinash\OneDrive\Desktop\namsate-react\node_modules\@parcel\utils\src\config.js133790082524739851 0
 106C:\Users\Avinash\OneDrive\Desktop\namsate-react\node_modules\caniuse-lite\data\features\referrer-policy.js133790082606645036 0
 105C:\Users\Avinash\OneDrive\Desktop\namsate-react\node_modules\caniuse-lite\data\features\rel-noreferrer.js133790082606905048 0
-70C:\Users\Avinash\OneDrive\Desktop\namsate-react\dist\index.ab0d9fc4.js133790085634591028 0
+70C:\Users\Avinash\OneDrive\Desktop\namsate-react\dist\index.ab0d9fc4.js133790704543422618 0
 98C:\Users\Avinash\OneDrive\Desktop\namsate-react\node_modules\caniuse-lite\data\features\rellist.js133790082606985378 0
 120C:\Users\Avinash\OneDrive\Desktop\namsate-react\node_modules\@swc\helpers\esm\_class_static_private_field_destructure.js133790082560886479 0
 91C:\Users\Avinash\OneDrive\Desktop\namsate-react\node_modules\@parcel\watcher\src\DirTree.hh133790082539011299 0
@@ -4296,6 +4296,6 @@
 88C:\Users\Avinash\OneDrive\Desktop\namsate-react\node_modules\.bin\update-browserslist-db133790082628919882 0
 92C:\Users\Avinash\OneDrive\Desktop\namsate-react\node_modules\.bin\update-browserslist-db.cmd133790082628919882 0
 92C:\Users\Avinash\OneDrive\Desktop\namsate-react\node_modules\.bin\update-browserslist-db.ps1133790082628919882 0
-70C:\Users\Avinash\OneDrive\Desktop\namsate-react\dist\index.5baa4167.js133790084532412486 0
-74C:\Users\Avinash\OneDrive\Desktop\namsate-react\dist\index.5baa4167.js.map133790084532552745 0
-74C:\Users\Avinash\OneDrive\Desktop\namsate-react\dist\index.ab0d9fc4.js.map133790085634751078 0
+70C:\Users\Avinash\OneDrive\Desktop\namsate-react\dist\index.5baa4167.js133790703539071629 0
+74C:\Users\Avinash\OneDrive\Desktop\namsate-react\dist\index.5baa4167.js.map133790703539191578 0
+74C:\Users\Avinash\OneDrive\Desktop\namsate-react\dist\index.ab0d9fc4.js.map133790704543634912 0
