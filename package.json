@@ -1,0 +1,23 @@
+{
+  "name": "namsate-react",
+  "version": "1.0.0",
+  "description": "- Dev Build\r - Local Server\r - HMR - Hot Module Replacement\r - File Matching Algorithm - written in c++\r - Cashing - Faster Builds\r - Image Optimization\r - Minification\r - Bundling\r - Compress\r - Consistent Hashing\r - Code Splitting\r - Differential Bundling - Support Older Browser\r - Diagnostic\r - Error Handling\r - HTTPs\r - Tree Shaking - remove unused code",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.13.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "browserlist": [
+    "last two version"
+  ]
+}
