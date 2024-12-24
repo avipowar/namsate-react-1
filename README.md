@@ -16,5 +16,3 @@
 - Error Handling
 - HTTPs
 - Tree Shaking - remove unused code
-- Different Build AND Prod Builds
-  git
