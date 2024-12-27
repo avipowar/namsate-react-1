@@ -1,50 +1,3 @@
-import React, { createElement } from "react";
-import ReactDom from "react-dom/client";
-
-const RestaurantCard = (props) => {
-  // console.log(props)
-  const { name, avgRating, costForTwo, cuisines, cloudinaryImageId } =
-    props?.resData?.info;
-  return (
-    <div className="res-card">
-      <img
-        className="res-logo"
-        alt="res-logo"
-        src={
-          "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_292,h_300/" +
-          cloudinaryImageId
-        }
-      />
-      <h4>{name}</h4>
-      <h4>{avgRating}</h4>
-      <h4>{costForTwo}</h4>
-      <h4>{cuisines.join(" , ")}</h4>
-      <h4>{props?.resData?.info?.sla?.deliveryTime + "  min"} </h4>
-    </div>
-  );
-};
-
-const Header = () => {
-  return (
-    <div className="header">
-      <div>
-        <img
-          className="logo"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk50Ut-wJKwbca3BTPssDUl_fqnsEE_D2tcw&s"
-        />
-      </div>
-      <div className="nav-items">
-        <ul className="nav-items-list">
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Contact Us</li>
-          <li>Cart</li>
-        </ul>
-      </div>
-    </div>
-  );
-};
-
 const restaurants = [
   {
     info: {
@@ -1552,28 +1505,4 @@ const restaurants = [
   },
 ];
 
-const Body = () => {
-  return (
-    <div className="body">
-      <div className="search">Search</div>
-      <div className="res-container">
-        {restaurants.map((restaurant) => (
-          <RestaurantCard key={restaurant.info.id} resData={restaurant} />
-        ))}
-      </div>
-    </div>
-  );
-};
-
-const AppLayout = () => {
-  return (
-    <div className="app">
-      <Header />
-      <Body />
-    </div>
-  );
-};
-
-const root = ReactDom.createRoot(document.getElementById("root"));
-
-root.render(<AppLayout />);
+export default restaurants;
