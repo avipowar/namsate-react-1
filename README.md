@@ -15,4 +15,23 @@
 - Diagnostic
 - Error Handling
 - HTTPs
-- Tree Shaking - remove unused code
+
+# Two Types of Export and Import
+
+- Default Export / Import
+
+export default component
+import component from "path
+
+- Named Export / Import
+
+export const component
+import {component} from "path"
+
+# React Hooks
+
+(Normal Js Utility Function)
+
+- Two Important Hooks in React
+  - useState() - This basically is used to Genrate superPowerful State Vairable In React
+  - useEffect() -
