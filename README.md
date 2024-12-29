@@ -35,3 +35,26 @@ import {component} from "path"
 - Two Important Hooks in React
   - useState() - This basically is used to Genrate superPowerful State Vairable In React
   - useEffect() -
+
+# Promises
+
+- Promise is used to handle Asycrhonas Task In Js
+- Promise is nothing its js object
+- First Promise return empty object and after successfully get data promise will data automatically
+- Promise Object Can Be Resolved only once time
+
+# Async Fuction
+
+- Async Function Always Returns A Promise
+- Async And Await Is Used To Handle Promises
+- Await is KeyWOrd That Can be Only be the used inside a async function
+- and Await be used inFront of promise and its resolve these promise
+
+# Why Use Promises (Completed Asycrhonas Task)
+
+- First time you have to completed Asycrhonas Task We use Callback Function
+- But Its Not Trustily That is why
+- Promises comes in the picture
+- After Coming Promise in Picture His Syntax IS Complicated
+- So Async Await is Coming with clean Syntax
+- Promise is used to complete asycrhonas task because js is synchronous threaded language
