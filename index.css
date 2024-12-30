@@ -39,12 +39,13 @@
 
 .res-card:hover {
   cursor: pointer;
-  border: 1px solid black;
+  border: 1px solid red;
   border-radius: 20px;
 }
 
 .res-logo {
   width: 100%;
+  border-radius: 10px;
 }
 
 .filter-btn {
@@ -62,4 +63,33 @@
   color: white;
   font-weight: bold;
   font-size: 14px;
+}
+
+.shimmer-container {
+  margin-left: 45px;
+  margin-top: 90px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shimmer-image-container {
+  background-color: #f0f0f0;
+  height: 180px;
+  width: 200px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.shimmer-heading {
+  background-color: #e4e4e4;
+  height: 13px;
+  width: 150px;
+  margin: 10px;
+}
+
+.shimmer-heading-2 {
+  background-color: #e4e4e4;
+  height: 13px;
+  width: 100px;
+  margin: 10px;
 }
