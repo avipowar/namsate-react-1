@@ -1,8 +1,9 @@
 .header {
-  border: 1px solid black;
+  /* border: 3px dotted bisque; */
   padding: 10px;
   display: flex;
   justify-content: space-between;
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -17,6 +18,8 @@
 
 .nav-items-list > li {
   margin: 10px;
+  margin-right: 25px;
+  /* border: 2px solid black; */
   font-size: 20px;
 }
 
@@ -82,14 +85,36 @@
 
 .shimmer-heading {
   background-color: #e4e4e4;
-  height: 13px;
+  height: 11px;
   width: 150px;
   margin: 10px;
 }
 
 .shimmer-heading-2 {
   background-color: #e4e4e4;
-  height: 13px;
-  width: 100px;
+  height: 11px;
+  width: 110px;
   margin: 10px;
+}
+
+.login-logout-btn {
+  height: 30px;
+  width: 80px;
+  margin-top: 0px;
+  border: none;
+  background-color: #2196f3;
+  color: white;
+  font-family: "roboto";
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login {
+  background-color: #1976d2;
+}
+
+.logout {
+  background-color: red;
 }
