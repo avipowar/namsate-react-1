@@ -97,6 +97,114 @@ const Shimmer = () => {
           <h1 className="shimmer-heading-2"></h1>
         </div>
       </div>
+      <div>
+        <div className="shimmer-image-container"></div>
+        <div>
+          <h1 className="shimmer-heading"></h1>
+        </div>
+        <div>
+          <h1 className="shimmer-heading-2"></h1>
+        </div>
+        <div>
+          <h1 className="shimmer-heading-2"></h1>
+        </div>
+      </div>
+      <div>
+        <div className="shimmer-image-container"></div>
+        <div>
+          <h1 className="shimmer-heading"></h1>
+        </div>
+        <div>
+          <h1 className="shimmer-heading-2"></h1>
+        </div>
+        <div>
+          <h1 className="shimmer-heading-2"></h1>
+        </div>
+      </div>
+      <div>
+        <div className="shimmer-image-container"></div>
+        <div>
+          <h1 className="shimmer-heading"></h1>
+        </div>
+        <div>
+          <h1 className="shimmer-heading-2"></h1>
+        </div>
+        <div>
+          <h1 className="shimmer-heading-2"></h1>
+        </div>
+      </div>
+      <div>
+        <div className="shimmer-image-container"></div>
+        <div>
+          <h1 className="shimmer-heading"></h1>
+        </div>
+        <div>
+          <h1 className="shimmer-heading-2"></h1>
+        </div>
+        <div>
+          <h1 className="shimmer-heading-2"></h1>
+        </div>
+      </div>
+      <div>
+        <div className="shimmer-image-container"></div>
+        <div>
+          <h1 className="shimmer-heading"></h1>
+        </div>
+        <div>
+          <h1 className="shimmer-heading-2"></h1>
+        </div>
+        <div>
+          <h1 className="shimmer-heading-2"></h1>
+        </div>
+      </div>
+      <div>
+        <div className="shimmer-image-container"></div>
+        <div>
+          <h1 className="shimmer-heading"></h1>
+        </div>
+        <div>
+          <h1 className="shimmer-heading-2"></h1>
+        </div>
+        <div>
+          <h1 className="shimmer-heading-2"></h1>
+        </div>
+      </div>
+      <div>
+        <div className="shimmer-image-container"></div>
+        <div>
+          <h1 className="shimmer-heading"></h1>
+        </div>
+        <div>
+          <h1 className="shimmer-heading-2"></h1>
+        </div>
+        <div>
+          <h1 className="shimmer-heading-2"></h1>
+        </div>
+      </div>
+      <div>
+        <div className="shimmer-image-container"></div>
+        <div>
+          <h1 className="shimmer-heading"></h1>
+        </div>
+        <div>
+          <h1 className="shimmer-heading-2"></h1>
+        </div>
+        <div>
+          <h1 className="shimmer-heading-2"></h1>
+        </div>
+      </div>
+      <div>
+        <div className="shimmer-image-container"></div>
+        <div>
+          <h1 className="shimmer-heading"></h1>
+        </div>
+        <div>
+          <h1 className="shimmer-heading-2"></h1>
+        </div>
+        <div>
+          <h1 className="shimmer-heading-2"></h1>
+        </div>
+      </div>
     </div>
   );
 };

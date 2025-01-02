@@ -5,6 +5,10 @@ import Shimmer from "./ShimmerUi";
 const Body = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
 
+  const [searchText, setSearchText] = useState("");
+
+  // console.log("Body-Render");
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -29,18 +33,44 @@ const Body = () => {
 
   return (
     <div className="body">
-      <div className="filter">
-        <button
-          className="filter-btn"
-          onClick={() => {
-            const filteredList = listOfRestaurants.filter(
-              (res) => res.info.avgRating > 4.3
-            );
-            setListOfRestaurants(filteredList);
-          }}
-        >
-          Top Rated Restaurants
-        </button>
+      <div className="searchFilterContainer">
+        <div className="search">
+          <input
+            className="find-the-food-input-box"
+            placeholder="Find the food..."
+            type="text"
+            value={searchText}
+            onChange={(event) => {
+              setSearchText(event.target.value);
+            }}
+          />
+          <button
+            className="search-restaurant-btn"
+            onClick={() => {
+              const searchFilterText = listOfRestaurants.filter((res) => {
+                res?.info?.name?.includes(searchText) === searchText;
+              });
+
+              setListOfRestaurants(searchFilterText);
+            }}
+          >
+            {" "}
+            Search
+          </button>
+        </div>
+        <div className="filter">
+          <button
+            className="filter-btn"
+            onClick={() => {
+              const filteredList = listOfRestaurants.filter(
+                (res) => res.info.avgRating > 4.3
+              );
+              setListOfRestaurants(filteredList);
+            }}
+          >
+            Search Top Rated Restaurants
+          </button>
+        </div>
       </div>
       <div className="res-container">
         {listOfRestaurants.map((restaurant) => (
