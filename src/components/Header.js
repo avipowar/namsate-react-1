@@ -13,15 +13,21 @@ const Header = () => {
       <div className="nav-items">
         <ul className="nav-items-list">
           <li>
-            <Link to={"/"}>Home</Link>
+            <Link className="list-style-to" to={"/"}>
+              Home
+            </Link>
           </li>
           <li>
-            <Link to={"/about"}>About Us</Link>
+            <Link className="list-style-to" to={"/about"}>
+              About Us
+            </Link>
           </li>
           <li>
-            <Link to={"/contact"}>Contact Us</Link>
+            <Link className="list-style-to" to={"/contact"}>
+              Contact Us
+            </Link>
           </li>
-          <li>Cart</li>
+          <li className="list-style-to">Cart</li>
           <li>
             <button
               className={`login-logout-btn ${

@@ -3,3 +3,6 @@ export const CDN_URL =
 
 export const LOGO_URL =
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk50Ut-wJKwbca3BTPssDUl_fqnsEE_D2tcw&s";
+
+export const RATING_URL =
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5bSZPRt-CKAXa7VLdDZP72tAHHiyIv1Aszg&s";

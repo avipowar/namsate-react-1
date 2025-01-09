@@ -5,6 +5,7 @@ import Body from "./components/Body";
 import ContactUs from "./components/ContactUs";
 import AboutUs from "./components/AboutUs";
 import Error from "./components/Error";
+import RestaurantsMenu from "./components/RestaurantsMenu";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 const AppLayout = () => {
@@ -34,6 +35,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/contact",
         element: <ContactUs />,
+      },
+      {
+        path: "/resMenu/:redId",
+        element: <RestaurantsMenu />,
       },
     ],
     errorElement: <Error />,

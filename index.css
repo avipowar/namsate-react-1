@@ -133,6 +133,15 @@
   background-color: #d32f2f;
 }
 
+.list-style-to {
+  color: #0078d4;
+  list-style: none;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #f9f9f9;
+}
+
 .searchFilterContainer {
   display: flex;
   margin-left: 210px;
@@ -397,4 +406,91 @@ body {
 
 .error-link:hover {
   background-color: #e64a19;
+}
+
+/* info res */
+.heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+  margin-bottom: 0.8rem;
+}
+
+.resinfo-parent-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  margin: 0;
+  padding: 0;
+}
+
+.resInfo {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.rating-parent-div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 0.8rem;
+}
+
+.rating-url {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 0.8rem;
+}
+
+.res-ratings {
+  font-size: 1rem;
+  color: black;
+  font-weight: bold;
+  text-align: left;
+}
+
+.res-cousins {
+  font-size: 16px;
+  color: #e65100;
+  margin: 0.8rem 0;
+  text-align: left;
+  font-weight: bold;
+  font-family: "roboto";
+  text-decoration: underline;
+}
+
+.res-delivery-time {
+  font-size: 0.8rem;
+  color: black;
+  margin-bottom: 0.4rem;
+  text-align: left;
+}
+
+.resInfo div:hover {
+  background-color: #fafafa;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.outlet-text {
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.area-name {
+  color: #555;
 }
