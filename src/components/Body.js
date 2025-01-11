@@ -2,6 +2,7 @@ import RestaurantCard from "./RestaurantCard";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Shimmer from "./ShimmerUi";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Body = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
@@ -32,6 +33,21 @@ const Body = () => {
       json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
   };
+
+  const onlineStatus = useOnlineStatus();
+
+  if (onlineStatus === false) {
+    return (
+      <div className="internet-status">
+        <div className="internet-status-content">
+          <p className="internet-status-title">⚠️ Oops! Internet is gone.</p>
+          <p className="internet-status-message">
+            Please reconnect to continue using the app.
+          </p>
+        </div>
+      </div>
+    );
+  }
 
   if (listOfRestaurants.length === 0) {
     return <Shimmer />;
