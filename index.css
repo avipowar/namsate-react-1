@@ -42,8 +42,13 @@
 
 .res-card:hover {
   cursor: pointer;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   border-radius: 20px;
+}
+
+.resCard-info {
+  color: black;
+  text-decoration: none;
 }
 
 .res-logo {
@@ -134,11 +139,11 @@
 }
 
 .list-style-to {
-  color: #0078d4;
+  color: black;
   list-style: none;
   text-decoration: none;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 600;
   background-color: #f9f9f9;
 }
 
@@ -185,15 +190,6 @@
   font-size: 16px;
   font-family: "Roboto";
   padding: 6px;
-}
-
-/* Contact Us Page */
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f8f8f8;
 }
 
 /* Contact Us Page */
@@ -276,16 +272,6 @@ body {
   background-color: #17a085;
 }
 
-/* About Us */
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
-}
-
-/* About Us Page */
 .about-container {
   padding: 20px;
   max-width: 800px;
@@ -346,7 +332,6 @@ body {
 .about-home-button:hover {
   background-color: #0056b3;
 }
-/* Error Page */
 
 body {
   font-family: Arial, sans-serif;
@@ -355,7 +340,6 @@ body {
   background-color: #f8f9fa;
 }
 
-/* Error Page Styling */
 .error-container {
   display: flex;
   justify-content: center;
@@ -408,7 +392,6 @@ body {
   background-color: #e64a19;
 }
 
-/* info res */
 .heading {
   font-size: 1.8rem;
   font-weight: bold;
@@ -493,4 +476,182 @@ body {
 
 .area-name {
   color: #555;
+}
+
+.dishes-heading-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.dishes-heading {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.resMenu-section {
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* menu section */
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.restaurant-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.restaurant-cuisines {
+  font-size: 16px;
+  color: #555;
+}
+
+.restaurant-area {
+  font-size: 14px;
+  color: #777;
+  margin-top: 5px;
+}
+
+.restaurant-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.rating {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.cost,
+.delivery-time {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Menu Section */
+.menu-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+}
+
+.menu-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.menu-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.menu-items {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.menu-item {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #444;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.resContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  max-width: 1200px;
+}
+
+.res-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.res-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.res-logo {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.restaurant-heading {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.restaurant-rating {
+  color: #4caf50;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.restaurant-cost,
+.restaurant-cuisines,
+.restaurant-delivery-time {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 6px;
 }

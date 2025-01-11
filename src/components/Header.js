@@ -3,14 +3,16 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  [loginLogoutBtn, setLoginLogoutBtn] = useState("Login");
+  const [loginLogoutBtn, setLoginLogoutBtn] = useState("Login");
 
   return (
-    <div className="header">
-      <div>
-        <img className="logo" src={LOGO_URL} />
+    <header className="header">
+      <div className="logo-container">
+        <Link to={"/"}>
+          <img className="logo" src={LOGO_URL} alt="Logo" />
+        </Link>
       </div>
-      <div className="nav-items">
+      <nav className="nav-items">
         <ul className="nav-items-list">
           <li>
             <Link className="list-style-to" to={"/"}>
@@ -27,7 +29,11 @@ const Header = () => {
               Contact Us
             </Link>
           </li>
-          <li className="list-style-to">Cart</li>
+          <li>
+            <Link className="list-style-to" to={"/cart"}>
+              Cart
+            </Link>
+          </li>
           <li>
             <button
               className={`login-logout-btn ${
@@ -43,8 +49,8 @@ const Header = () => {
             </button>
           </li>
         </ul>
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 };
 

@@ -6,3 +6,6 @@ export const LOGO_URL =
 
 export const RATING_URL =
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5bSZPRt-CKAXa7VLdDZP72tAHHiyIv1Aszg&s";
+
+export const MENU_URL =
+  "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=16.7035291&lng=74.2432304&restaurantId=";
