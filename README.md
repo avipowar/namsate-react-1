@@ -58,3 +58,16 @@ import {component} from "path"
 - After Coming Promise in Picture His Syntax IS Complicated
 - So Async Await is Coming with clean Syntax
 - Promise is used to complete asycrhonas task because js is synchronous threaded language
+
+# Lazy Loading
+
+- Lazy Loading is used to load component only when it is needed
+- Lazy Loading is Used To improve your application performance
+- When use Lazy Loading you userExperience is good
+
+- # Name of Lazy Loading
+  - On Demand Loading
+  - Code Splitting
+  - Dynamic Import
+  - Asycrhonas Loading
+  - Conditional Loading

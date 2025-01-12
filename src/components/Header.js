@@ -16,9 +16,6 @@ const Header = () => {
       </div>
       <nav className="nav-items">
         <ul className="nav-items-list">
-          <li className="list-style-to">
-            OnlineStatus : {onlineStatus ? "🟢" : "🔴"}
-          </li>
           <li>
             <Link className="list-style-to" to={"/"}>
               Home
@@ -38,6 +35,14 @@ const Header = () => {
             <Link className="list-style-to" to={"/cart"}>
               Cart
             </Link>
+          </li>
+          <li>
+            <Link className="list-style-to" to={"/grocery"}>
+              Grocery
+            </Link>
+          </li>
+          <li className="list-style-to">
+            OnlineStatus : {onlineStatus ? "🟢" : "🔴"}
           </li>
           <li>
             <button
