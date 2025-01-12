@@ -11,7 +11,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 // Lazy Loading
 const Grocery = lazy(() => {
-  import("./components/Grocery");
+  return import("./components/Grocery");
 });
 
 const AppLayout = () => {

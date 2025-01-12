@@ -1,5 +1,9 @@
 const Grocery = () => {
-  return <h1>Its Big Grocery App</h1>;
+  return (
+    <div>
+      <h1>Its Big Grocery App</h1>
+    </div>
+  );
 };
 
 export default Grocery;
