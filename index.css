@@ -697,3 +697,129 @@ body {
   margin: 0;
   font-weight: 500;
 }
+
+/* ResTaurantsCategory */
+
+.resTaurantsCategory {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+.resTaurantsCategory-symbol {
+  margin-top: 15px;
+}
+
+.restaurant-category-title {
+  margin-left: 10px;
+}
+
+.resTaurantsCategory:not(:last-child) {
+  border-bottom: 1px solid #ccc; /* Border except for last element */
+}
+
+/* IteM List */
+
+.itemList {
+  display: flex;
+  border-bottom: gray 1px solid;
+  padding: 5px;
+  margin: 5px;
+  /* margin-bottom: 40px; */
+  justify-content: space-between;
+}
+
+.itemList-info {
+  width: 70%;
+  padding: 0px;
+  /* margin: 5px; */
+}
+.itemList-image {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  padding: 10px;
+  /* position: absolute; */
+}
+
+.itemList-Add-btn {
+  position: absolute;
+  margin-top: 150px;
+}
+
+.itemList-image-url {
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+
+  /* border: 2px solid black; */
+}
+
+.itemList-add-btn {
+  background-color: white;
+  color: green;
+  font-weight: bold;
+  height: 40px;
+  width: 80px;
+  border-style: none;
+  border: 1px solid grey;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.itemList-name {
+  color: #555555;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.itemList-price {
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.itemList-rating-icon {
+  color: green;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.itemList-rating {
+  color: green;
+  font-size: 14px;
+}
+
+.itemList-avgRating {
+  color: grey;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.itemList-description {
+  color: grey;
+  font-size: 14px;
+  height: auto;
+  width: 90%;
+  padding: 5px;
+  word-wrap: break-word;
+  /* font-weight: bold; */
+  /* border: 2px solid black; */
+}
+.main-div-container {
+  padding: 20px 40px;
+  gap: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  /* border: 2px solid black; */
+  margin-bottom: 30px;
+  border: 1px solid grey;
+}

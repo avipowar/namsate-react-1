@@ -2,6 +2,7 @@ import { RATING_URL } from "../utils/constants";
 import Shimmer from "./ShimmerUi";
 import { useParams } from "react-router-dom";
 import useRestaurantsMenu from "../utils/useRestaurantsMenu";
+import RestaurantsCategory from "./RestaurantCategories";
 
 const RestaurantsMenu = () => {
   const { resId } = useParams();
@@ -17,9 +18,15 @@ const RestaurantsMenu = () => {
   const { maxDeliveryTime, minDeliveryTime } =
     resInfo?.cards[2]?.card?.card?.info?.sla;
 
-  const { cards } = resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR;
-  const { title } = cards[2]?.card?.card;
-  const { itemCards } = cards[2]?.card?.card;
+  // console.log(resInfo);
+
+  const resCategories =
+    resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.filter(
+      (resCategori) =>
+        resCategori?.card?.card?.["@type"] ===
+        "type.googleapis.com/swiggy.presentation.food.v2.NestedItemCategory"
+    );
+  // console.log(resCategories);
 
   return (
     <div className="menu-container">
@@ -36,23 +43,14 @@ const RestaurantsMenu = () => {
           </p>
         </div>
       </div>
-
       {/* Menu Section */}
       <div className="menu-card">
-        <h2 className="menu-title">{title}</h2>
-        <p className="menu-subtitle">
-          {title} ({itemCards.length} items)
-        </p>
-        <ul className="menu-items">
-          {itemCards.map((resMenu) => {
-            const { id, name } = resMenu?.card?.info;
-            return (
-              <li key={id} className="menu-item">
-                {name}
-              </li>
-            );
-          })}
-        </ul>
+        {resCategories.map((resCategory) => (
+          <RestaurantsCategory
+            key={resCategories?.card?.card?.title}
+            data={resCategory?.card?.card}
+          />
+        ))}
       </div>
     </div>
   );
