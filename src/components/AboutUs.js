@@ -1,4 +1,8 @@
+import userContext from "../utils/userContext";
+import { useContext } from "react";
 const AboutUs = () => {
+  const { loggedUser } = useContext(userContext);
+
   return (
     <div className="about-container">
       <h1 className="about-title">About Us</h1>
@@ -21,6 +25,7 @@ const AboutUs = () => {
           <li>Fast and reliable delivery</li>
           <li>Easy-to-use platform</li>
           <li>Exciting offers and discounts</li>
+          <h1>{loggedUser}</h1>
         </ul>
         <h2 className="about-subtitle">Our Commitment</h2>
         <p>

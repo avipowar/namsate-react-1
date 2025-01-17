@@ -6,8 +6,10 @@ import ContactUs from "./components/ContactUs";
 import AboutUs from "./components/AboutUs";
 import Error from "./components/Error";
 import RestaurantsMenu from "./components/RestaurantsMenu";
+import { useState, useEffect } from "react";
 // import Grocery from "";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import userContext from "./utils/userContext";
 
 // Lazy Loading
 const Grocery = lazy(() => {
@@ -15,11 +17,22 @@ const Grocery = lazy(() => {
 });
 
 const AppLayout = () => {
+  const [userName, setUsername] = useState();
+
+  useEffect(() => {
+    const data = {
+      name: "Avinash Powar",
+    };
+    setUsername(data.name);
+  }, []);
+
   return (
-    <div className="app">
-      <Header />
-      <Outlet />
-    </div>
+    <userContext.Provider value={{ loggedUser: userName, setUsername }}>
+      <div className="app">
+        <Header />
+        <Outlet />
+      </div>
+    </userContext.Provider>
   );
 };
 

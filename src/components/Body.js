@@ -1,9 +1,10 @@
 import RestaurantCard from "./RestaurantCard";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import Shimmer from "./ShimmerUi";
 import useOnlineStatus from "../utils/useOnlineStatus";
-
+import { useContext } from "react";
+import userContext from "../utils/userContext";
 const Body = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
 
@@ -11,7 +12,9 @@ const Body = () => {
 
   const [searchText, setSearchText] = useState("");
 
-  // console.log("Body-Render");
+  const { setUsername, loggedUser } = useContext(userContext);
+
+  // console.log(data);
 
   useEffect(() => {
     fetchData();
@@ -92,6 +95,16 @@ const Body = () => {
           >
             Search Top Rated Restaurants
           </button>
+        </div>
+        <div className="user-name-container">
+          <label className="user-name-label">UserName:</label>
+          <input
+            className="user-name-search-box"
+            onChange={(e) => {
+              setUsername(e.target.value);
+            }}
+            value={loggedUser}
+          />
         </div>
       </div>
       <div className="res-container">

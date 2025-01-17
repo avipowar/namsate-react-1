@@ -34,7 +34,8 @@
 
 .search {
   padding: 10px;
-  margin-left: 45px;
+  margin-left: 80px;
+  /* border: 2px solid red; */
 }
 
 .res-card {
@@ -63,7 +64,7 @@
   /* margin: 10px; */
   margin-top: 10px;
   /* margin-bottom: 30px; */
-  margin-left: 140px;
+  margin-left: 100px;
   height: 40px;
   width: 230px;
   cursor: pointer;
@@ -151,7 +152,7 @@
 
 .searchFilterContainer {
   display: flex;
-  margin-left: 210px;
+  margin-left: 10px;
   margin-top: 30px;
   /* border: 2px solid red; */
   margin-bottom: 30px;
@@ -822,4 +823,24 @@ body {
   /* border: 2px solid black; */
   margin-bottom: 30px;
   border: 1px solid grey;
+}
+.user-name-search-box {
+  border: 1px solid gray;
+  margin-top: 13px;
+  margin-left: 10px;
+  height: 20px;
+  padding: 5px;
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.user-name-container {
+  margin-left: 100px;
+}
+
+.user-name-label {
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
 }
