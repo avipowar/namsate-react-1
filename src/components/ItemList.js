@@ -1,6 +1,6 @@
 import { CDN_URL, MENU_URL, ITEMLIST_URL } from "../utils/constants";
 const ItemList = ({ list }) => {
-  console.log(list);
+  // console.log(list);
   return (
     <div>
       {list.map((item) => {

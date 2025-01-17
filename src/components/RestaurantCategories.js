@@ -1,14 +1,17 @@
 import { useState, useEffect } from "react";
 import ItemList from "./ItemList";
 
-const RestaurantsCategory = ({ data }) => {
+const RestaurantsCategory = (props) => {
+  const { data, showIndex, setShowIndex } = props;
   const { title } = data;
   const itemList = data?.categories || [];
-  const [showItem, setShowItem] = useState(false);
-  const handleClick = () => {
-    setShowItem(!showItem);
-  };
-  // console.log(itemList);
+  const showItem = showIndex;
+  console.log(props);
+
+  function handleClick() {
+    setShowIndex();
+  }
+
   return (
     <div className="main-div-container">
       <h3 className="restaurant-category-title">{title}</h3>
