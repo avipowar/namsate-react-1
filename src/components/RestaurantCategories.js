@@ -6,7 +6,7 @@ const RestaurantsCategory = (props) => {
   const { title } = data;
   const itemList = data?.categories || [];
   const showItem = showIndex;
-  console.log(props);
+  // console.log(props);
 
   function handleClick() {
     setShowIndex();

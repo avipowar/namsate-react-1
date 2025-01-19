@@ -3,6 +3,7 @@ import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import userContext from "../utils/userContext";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   const [loginLogoutBtn, setLoginLogoutBtn] = useState("Login");
@@ -10,6 +11,13 @@ const Header = () => {
 
   const { loggedUser } = useContext(userContext);
   // console.log(loggedUser);
+
+  // Subscribe to the store
+
+  const cartItems = useSelector((store) => {
+    return store.cart.items;
+  });
+  console.log(cartItems);
 
   return (
     <header className="header">
@@ -37,7 +45,7 @@ const Header = () => {
           </li>
           <li>
             <Link className="list-style-to" to={"/cart"}>
-              Cart
+              Cart - ({cartItems.length} Items)
             </Link>
           </li>
           <li>

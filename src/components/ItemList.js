@@ -1,6 +1,19 @@
 import { CDN_URL, MENU_URL, ITEMLIST_URL } from "../utils/constants";
+import { useDispatch } from "react-redux";
+import { addItem } from "../utils/cartSlice";
 const ItemList = ({ list }) => {
   // console.log(list);
+
+  const dispatch = useDispatch();
+
+  const handleClick = (item) => {
+    dispatch(addItem(item));
+
+    // {
+    //   paylod:"pizza"
+    // }
+  };
+
   return (
     <div>
       {list.map((item) => {
@@ -33,7 +46,12 @@ const ItemList = ({ list }) => {
                 <div></div> // Or any fallback content
               )}
               <div className=" itemList-Add-btn">
-                <button className="itemList-add-btn">ADD</button>
+                <button
+                  className="itemList-add-btn"
+                  onClick={() => handleClick(item)}
+                >
+                  ADD
+                </button>
               </div>
             </div>
           </div>

@@ -71,3 +71,26 @@ import {component} from "path"
   - Dynamic Import
   - Asycrhonas Loading
   - Conditional Loading
+
+# Redux ToolKit
+
+- install @reduxjs/toolkit
+- install react-redux
+- build our store
+- connect our store to our app
+- create cartSlice
+- dispatch action
+- selector
+
+<!-- how to work dispatch -->
+
+const dispatch = useDispatch();
+
+const handleClick = () => {
+dispatch(addItem("Pizza"));
+
+    // {
+    //   paylod:"pizza"
+    // }
+
+};
