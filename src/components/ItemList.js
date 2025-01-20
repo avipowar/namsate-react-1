@@ -7,7 +7,8 @@ const ItemList = ({ list }) => {
 
   const dispatch = useDispatch();
 
-  const handleClick = (item) => {
+  const handleClick = (item, name) => {
+    console.log(item, name);
     dispatch(addItem(item));
   };
 
@@ -45,7 +46,7 @@ const ItemList = ({ list }) => {
               <div className=" itemList-Add-btn">
                 <button
                   className="itemList-add-btn"
-                  onClick={() => handleClick(item)}
+                  onClick={() => handleClick(item, "dummy")}
                 >
                   ADD
                 </button>
