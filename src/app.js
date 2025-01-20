@@ -10,8 +10,8 @@ import { useState, useEffect } from "react";
 // import Grocery from "";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import userContext from "./utils/userContext";
-import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
+import { Provider } from "react-redux";
 import Cart from "./components/Cart";
 
 // Lazy Loading
@@ -24,7 +24,7 @@ const AppLayout = () => {
 
   useEffect(() => {
     const data = {
-      name: "Avinash Powar",
+      name: "",
     };
     setUsername(data.name);
   }, []);
@@ -53,7 +53,7 @@ const appRouter = createBrowserRouter([
         element: <Body />,
       },
       {
-        path: "about",
+        path: "/about",
         element: <AboutUs />,
       },
       {

@@ -852,7 +852,7 @@ body {
   flex-direction: column;
   width: 100%;
   padding: 20px;
-  background-color: #f5f5f5;
+  /* background-color: white; */
 }
 
 .cart-container {

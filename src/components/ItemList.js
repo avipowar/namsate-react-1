@@ -1,6 +1,7 @@
-import { CDN_URL, MENU_URL, ITEMLIST_URL } from "../utils/constants";
 import { useDispatch } from "react-redux";
+import { CDN_URL, MENU_URL, ITEMLIST_URL } from "../utils/constants";
 import { addItem } from "../utils/cartSlice";
+
 const ItemList = ({ list }) => {
   // console.log(list);
 
@@ -8,10 +9,6 @@ const ItemList = ({ list }) => {
 
   const handleClick = (item) => {
     dispatch(addItem(item));
-
-    // {
-    //   paylod:"pizza"
-    // }
   };
 
   return (

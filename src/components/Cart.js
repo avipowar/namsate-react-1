@@ -3,30 +3,26 @@ import ItemList from "./ItemList";
 import { clearItem } from "../utils/cartSlice";
 
 const Cart = () => {
-  const cartItems = useSelector((store) => {
-    return store.cart.items;
-  });
-
   const dispatch = useDispatch();
-
   const handleClick = () => {
-    return dispatch(clearItem());
+    dispatch(clearItem());
   };
 
+  const cartItems = useSelector((store) => store.cart.items);
+  console.log(cartItems);
   return (
-    <div className="cart-main-container">
-      <div className="cart-item-clear-btn">
-        <button onClick={handleClick} className="clear-btn">
-          Clear Cart Items
+    <div className="cart-main-container ">
+      <h1 className="cart-heading">Cart</h1>
+      <div>
+        <button className="clear-btn" onClick={handleClick}>
+          {" "}
+          Clear Cart
         </button>
       </div>
-      <div className="cart-container">
-        <h1 className="cart-heading">Cart</h1>
+      {cartItems.length === 0 && <h1>Cart Is Empty Add The Items In It</h1>}
+      <div className="cart-container ">
         <ItemList list={cartItems} />
       </div>
-      {cartItems.length === 0 && (
-        <h1 className="cart-heading"> Cart Is Empty Please Add the Items</h1>
-      )}
     </div>
   );
 };

@@ -15,9 +15,9 @@ const RestaurantsCategory = (props) => {
   return (
     <div className="main-div-container">
       <h3 className="restaurant-category-title">{title}</h3>
-      {itemList.map((item) => {
+      {itemList.map((item, index) => {
         return (
-          <div key={item.id}>
+          <div key={index}>
             {/* <div className="resTaurantsCategory"> */}
             <div className="resTaurantsCategory" onClick={handleClick}>
               <p>

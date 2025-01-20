@@ -13,11 +13,8 @@ const Header = () => {
   // console.log(loggedUser);
 
   // Subscribe to the store
-
-  const cartItems = useSelector((store) => {
-    return store.cart.items;
-  });
-  console.log(cartItems);
+  cartItems = useSelector((store) => store.cart.items);
+  // console.log(cartItems);
 
   return (
     <header className="header">
