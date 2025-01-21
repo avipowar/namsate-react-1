@@ -662,39 +662,27 @@ body {
 /* internet status */
 
 .internet-status {
-  position: fixed;
-  top: 50%;
-  left: 40%;
-  transform: translateX(-50%);
-  background-color: #ff4d4d;
-  color: #ffffff;
-  text-align: center;
-  padding: 16px 24px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  z-index: 9999;
-  max-width: 90%;
-  width: 400px;
-}
-
-.internet-status-content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
+  justify-content: center;
+  margin: 80px;
+  /* background-color: rgba(211, 25, 25, 0.881); */
+  color: black;
+  /* width: 100%; */
+  /* padding: 15px; */
 }
 
 .internet-status-title {
-  font-size: 18px;
+  font-size: 26px;
   font-weight: 700;
   margin: 0;
   display: flex;
   align-items: center;
   gap: 8px;
+  margin-left: 5px;
 }
 
 .internet-status-message {
-  font-size: 14px;
+  font-size: 18px;
   margin: 0;
   font-weight: 500;
 }
@@ -905,4 +893,64 @@ body {
 
 .cart-container {
   width: 70%;
+}
+
+/* Grocery.css */
+/* Grocery.css */
+.grocery-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; */
+  margin-top: 80px;
+  background-color: #f0f4f8; /* Soft, light gray background */
+  text-align: center;
+}
+
+.grocery-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333; /* Darker text color for contrast */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Slight white background */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.grocery-description {
+  font-size: 1.25rem;
+  color: #666; /* Softer text color */
+  margin-top: 20px;
+  max-width: 600px;
+}
+
+.grocery-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.grocery-btn {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.grocery-btn-green {
+  background-color: #38b2ac;
+  color: white;
+}
+
+.grocery-btn-blue {
+  background-color: #3182ce;
+  color: white;
+}
+
+.grocery-btn:hover {
+  opacity: 0.8;
 }
